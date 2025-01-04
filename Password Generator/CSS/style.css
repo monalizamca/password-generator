@@ -1,0 +1,135 @@
+* {
+    font-family: "Montserrat", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+}
+
+html {
+    background: linear-gradient(180deg, #fffec47c 0%, #1fb8b0b3 100%);
+}
+
+input:focus {
+    outline: none;
+}
+
+#register-container {
+    max-width: 60%;
+    min-height: 60vh;
+    margin: 4rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+    background: url('../img/pexels-photo-4350214.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer {
+background-color: rgba(24, 66, 63, 0.7);
+height: 100%;
+padding: 2rem;
+display: flex;
+align-items: center;
+}
+
+#register-banner h1 {
+    margin-left: 12.5%;
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+#register-form {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #AAA;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid #AAA;
+    padding: 0.6rem 0;
+}
+
+#generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#generate-password:hover {
+    color: #00a80e;
+}
+
+#register-form #generated-password {
+    border: 1px solid #00a80e;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form #generated-password p {
+    color: #81d340;
+    margin-bottom: 0.5rem;
+
+}
+
+#register-form input[type='submit'] {
+    background-color: #18423fb3;
+    color: #fff;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: .4s;
+}
+
+#register-form input[type='submit']:hover {
+    opacity: 1;
+}

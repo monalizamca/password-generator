@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--JS-->
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <div id="register-container">
+        <div id="register-banner">
+            <div id="banner-layer">
+                <h1>Welcome!</h1>
+            </div>
+        </div>
+        <div id="register-form">
+            <h2>Create your account</h2>
+            <p>Register to use all system features.</p>
+            <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                type="text"
+                name="name" 
+                id="name" 
+                placeholder="Enter your name">
+            </div>
+            <div class="form-control">
+                <label for="email">Email address</label>
+                <input 
+                type="text" 
+                type="email" 
+                id="email" 
+                placeholder="Enter your email adress">
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input 
+                type="text" 
+                type="password" 
+                id="password" 
+                placeholder="Enter your password">
+            </div>
+            <p>
+                Do you want help creating a secure password? 
+                <span id="generate-password">Click here.</span>
+            </p>
+            <div id="generated-password">
+                <p>Here is your password:</p>
+                <h4></h4>
+            </div>
+            <div class="form-control">
+                <label for="confirmpassword">Password confirmation</label>
+                <input 
+                type="text" 
+                type="confirmpassword" 
+                id="confirmpassword" 
+                placeholder="Confirm Password">
+            </div>
+            <input type="submit" value="Register"/>
+        </div>
+    </div>
+    </body>
+</html>
