@@ -46,11 +46,32 @@
             </div>
             <p>
                 Do you want help creating a secure password? 
-                <span id="generate-password">Click here.</span>
+                <span id="open-generate-password">Click here.</span>
             </p>
+            <div id="generate-options" class="hide">
+                <p>Select the options you desire:</p>
+                <div class="form-control">
+                    <label for="lenght">Number of characters:</label>
+                    <input type="text" name="lenght" id="lenght" value="10">
+                </div>
+                <div class="form-control">
+                    <label for="letters">Letters:</label>
+                    <input type="checkbox" name="letters" id="letters" checked>
+                </div>
+                <div class="form-control">
+                    <label for="numbers">Numbers:</label>
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                </div>
+                <div class="form-control">
+                    <label for="symbol">Symbols:</label>
+                    <input type="checkbox" name="symbol" id="symbol" checked>
+                </div>
+                <button id="generate-password">Create Password</button>
+            </div>
             <div id="generated-password">
                 <p>Here is your password:</p>
                 <h4></h4>
+                <button id="copy-password">Copy</button>
             </div>
             <div class="form-control">
                 <label for="confirmpassword">Password confirmation</label>
