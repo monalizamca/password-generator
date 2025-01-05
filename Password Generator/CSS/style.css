@@ -176,3 +176,59 @@ align-items: center;
 .hide {
     display: none;
 }
+
+/* Responsividade */
+
+/* small laptops 1110px */
+@media (max-width: 1110px) {
+
+    #register-container {
+    max-width: 70%;
+    }
+
+    #register-banner h1 {
+    margin-left: 30px;
+    font-size: 3rem;
+    }
+}
+
+/* smartphones 450px */
+@media (max-width: 450px) {
+
+    #register-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    }
+
+    #register-banner {
+    height: 275px;
+    width: 450px;
+    }
+
+    #register-banner h1 {
+    font-size: 3rem;
+    align-self: end;
+    margin-left: 60px;
+    }
+
+    #register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    #register-form h2 {
+    margin-right: 10px;
+    font-size: 2rem;
+    }
+    
+    #register-form input {
+    max-width: 370px;
+    }
+    #register-form #generated-password {
+    max-width: 370px;
+    }
+}
